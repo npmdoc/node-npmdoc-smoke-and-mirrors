@@ -1,0 +1,647 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://runspired.github.io/smoke-and-mirrors"
+
+    >smoke-and-mirrors (v0.6.2)</a>
+</h1>
+<h4>Ambitious infinite-scroll and rendering for ambitious applications.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors">module smoke-and-mirrors</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">smoke-and-mirrors.</span>_hasSetupBabelOptions</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors._setupBabelOptions">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>_setupBabelOptions
+            <span class="apidocSignatureSpan">(env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.environment">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>environment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.included">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>included
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.init">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.isDevelopingAddon">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>isDevelopingAddon
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.treeForAddon">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForAddon
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.treeForApp">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForApp
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">smoke-and-mirrors.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors._setupBabelOptions">module smoke-and-mirrors._setupBabelOptions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors._setupBabelOptions._setupBabelOptions">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>_setupBabelOptions
+            <span class="apidocSignatureSpan">(env)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors.environment">module smoke-and-mirrors.environment</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.environment.environment">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>environment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors.included">module smoke-and-mirrors.included</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.included.included">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>included
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors.init">module smoke-and-mirrors.init</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.init.init">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors.isDevelopingAddon">module smoke-and-mirrors.isDevelopingAddon</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.isDevelopingAddon.isDevelopingAddon">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>isDevelopingAddon
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors.treeForAddon">module smoke-and-mirrors.treeForAddon</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.treeForAddon.treeForAddon">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForAddon
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.smoke-and-mirrors.treeForApp">module smoke-and-mirrors.treeForApp</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.smoke-and-mirrors.treeForApp.treeForApp">
+            function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForApp
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors" id="apidoc.module.smoke-and-mirrors">module smoke-and-mirrors</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors._setupBabelOptions" id="apidoc.element.smoke-and-mirrors._setupBabelOptions">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>_setupBabelOptions
+        <span class="apidocSignatureSpan">(env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_setupBabelOptions = function (env) {
+  if (this._hasSetupBabelOptions) {
+    return;
+  }
+
+  var babelOptions = this.options.babel = this.options.babel || {};
+
+  babelOptions.plugins = babelOptions.plugins || [];
+  babelOptions.plugins.push({ transformer: stripClassCallCheck, position: &#x27;after&#x27; });
+
+  if (/production/.test(env)) {
+    babelOptions.plugins.push(
+      filterImports({
+      &#x27;smoke-and-mirrors/-debug/helpers&#x27;: [
+        &#x27;assert&#x27;,
+        &#x27;warn&#x27;,
+        &#x27;debug&#x27;,
+        &#x27;instrument&#x27;,
+        &#x27;deprecate&#x27;,
+        &#x27;stripInProduction&#x27;
+      ]})
+    );
+  }
+
+  this._hasSetupBabelOptions = true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+if (typeof app.import !== &#x27;function&#x27;) {
+  throw new Error(&#x27;smoke-and-mirrors is being used within another addon or engine &#x27; +
+    &#x27;and is having trouble registering itself to the parent application.&#x27;);
+}
+
+this.<span class="apidocCodeKeywordSpan">_setupBabelOptions</span>(app.env);
+
+if (!/production/.test(app.env)) {
+  this.ui.write(
+    chalk.grey(&#x22;\n===================================================================\n&#x22;) +
+    chalk.cyan(&#x22;\tSmoke-and-mirrors\n&#x22;) +
+    chalk.grey(&#x22;\t:: Including CSS for Visual Debugger\n&#x22;) +
+    chalk.grey(&#x22;\t:: (included in non production builds only)\n&#x22;) +
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.environment" id="apidoc.element.smoke-and-mirrors.environment">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>environment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">environment = function () {
+  return { };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.included" id="apidoc.element.smoke-and-mirrors.included">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>included
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">included = function (app) {
+  this._super.included.apply(this, arguments);
+
+  while (typeof app.import !== &#x27;function&#x27; &#x26;&#x26; app.app) {
+    app = app.app;
+  }
+
+  if (typeof app.import !== &#x27;function&#x27;) {
+    throw new Error(&#x27;smoke-and-mirrors is being used within another addon or engine &#x27; +
+      &#x27;and is having trouble registering itself to the parent application.&#x27;);
+  }
+
+  this._setupBabelOptions(app.env);
+
+  if (!/production/.test(app.env)) {
+    this.ui.write(
+      chalk.grey(&#x22;\n===================================================================\n&#x22;) +
+      chalk.cyan(&#x22;\tSmoke-and-mirrors\n&#x22;) +
+      chalk.grey(&#x22;\t:: Including CSS for Visual Debugger\n&#x22;) +
+      chalk.grey(&#x22;\t:: (included in non production builds only)\n&#x22;) +
+      chalk.grey(&#x22;\t:: To use, set &#x22;) + chalk.yellow(&#x22;{{vertical-collection debug=true}}&#x22;) +
+      chalk.grey(&#x22;\n===================================================================\n&#x22;)
+    );
+
+    app.import(&#x27;./vendor/debug.css&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.init" id="apidoc.element.smoke-and-mirrors.init">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this._super.init &#x26;&#x26; this._super.init.apply(this, arguments);
+
+  this.options = this.options || {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.isDevelopingAddon" id="apidoc.element.smoke-and-mirrors.isDevelopingAddon">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>isDevelopingAddon
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDevelopingAddon = function () {
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.treeForAddon" id="apidoc.element.smoke-and-mirrors.treeForAddon">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForAddon
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForAddon = function () {
+  var tree = this._super.treeForAddon.apply(this, arguments);
+
+  if (/production/.test(this.parent.env)) {
+    tree = new Funnel(tree, { exclude: [ /-debug/ ] });
+  }
+
+  return tree;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.treeForApp" id="apidoc.element.smoke-and-mirrors.treeForApp">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForApp
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForApp = function () {
+  var tree = this._super.treeForApp.apply(this, arguments);
+
+  if (/production/.test(this.parent.env)) {
+    tree = new Funnel(tree, { exclude: [ /initializers/ ] });
+  }
+
+  return tree;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors._setupBabelOptions" id="apidoc.module.smoke-and-mirrors._setupBabelOptions">module smoke-and-mirrors._setupBabelOptions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors._setupBabelOptions._setupBabelOptions" id="apidoc.element.smoke-and-mirrors._setupBabelOptions._setupBabelOptions">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>_setupBabelOptions
+        <span class="apidocSignatureSpan">(env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_setupBabelOptions = function (env) {
+  if (this._hasSetupBabelOptions) {
+    return;
+  }
+
+  var babelOptions = this.options.babel = this.options.babel || {};
+
+  babelOptions.plugins = babelOptions.plugins || [];
+  babelOptions.plugins.push({ transformer: stripClassCallCheck, position: &#x27;after&#x27; });
+
+  if (/production/.test(env)) {
+    babelOptions.plugins.push(
+      filterImports({
+      &#x27;smoke-and-mirrors/-debug/helpers&#x27;: [
+        &#x27;assert&#x27;,
+        &#x27;warn&#x27;,
+        &#x27;debug&#x27;,
+        &#x27;instrument&#x27;,
+        &#x27;deprecate&#x27;,
+        &#x27;stripInProduction&#x27;
+      ]})
+    );
+  }
+
+  this._hasSetupBabelOptions = true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+if (typeof app.import !== &#x27;function&#x27;) {
+  throw new Error(&#x27;smoke-and-mirrors is being used within another addon or engine &#x27; +
+    &#x27;and is having trouble registering itself to the parent application.&#x27;);
+}
+
+this.<span class="apidocCodeKeywordSpan">_setupBabelOptions</span>(app.env);
+
+if (!/production/.test(app.env)) {
+  this.ui.write(
+    chalk.grey(&#x22;\n===================================================================\n&#x22;) +
+    chalk.cyan(&#x22;\tSmoke-and-mirrors\n&#x22;) +
+    chalk.grey(&#x22;\t:: Including CSS for Visual Debugger\n&#x22;) +
+    chalk.grey(&#x22;\t:: (included in non production builds only)\n&#x22;) +
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors.environment" id="apidoc.module.smoke-and-mirrors.environment">module smoke-and-mirrors.environment</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.environment.environment" id="apidoc.element.smoke-and-mirrors.environment.environment">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>environment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">environment = function () {
+  return { };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors.included" id="apidoc.module.smoke-and-mirrors.included">module smoke-and-mirrors.included</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.included.included" id="apidoc.element.smoke-and-mirrors.included.included">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>included
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">included = function (app) {
+  this._super.included.apply(this, arguments);
+
+  while (typeof app.import !== &#x27;function&#x27; &#x26;&#x26; app.app) {
+    app = app.app;
+  }
+
+  if (typeof app.import !== &#x27;function&#x27;) {
+    throw new Error(&#x27;smoke-and-mirrors is being used within another addon or engine &#x27; +
+      &#x27;and is having trouble registering itself to the parent application.&#x27;);
+  }
+
+  this._setupBabelOptions(app.env);
+
+  if (!/production/.test(app.env)) {
+    this.ui.write(
+      chalk.grey(&#x22;\n===================================================================\n&#x22;) +
+      chalk.cyan(&#x22;\tSmoke-and-mirrors\n&#x22;) +
+      chalk.grey(&#x22;\t:: Including CSS for Visual Debugger\n&#x22;) +
+      chalk.grey(&#x22;\t:: (included in non production builds only)\n&#x22;) +
+      chalk.grey(&#x22;\t:: To use, set &#x22;) + chalk.yellow(&#x22;{{vertical-collection debug=true}}&#x22;) +
+      chalk.grey(&#x22;\n===================================================================\n&#x22;)
+    );
+
+    app.import(&#x27;./vendor/debug.css&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors.init" id="apidoc.module.smoke-and-mirrors.init">module smoke-and-mirrors.init</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.init.init" id="apidoc.element.smoke-and-mirrors.init.init">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this._super.init &#x26;&#x26; this._super.init.apply(this, arguments);
+
+  this.options = this.options || {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors.isDevelopingAddon" id="apidoc.module.smoke-and-mirrors.isDevelopingAddon">module smoke-and-mirrors.isDevelopingAddon</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.isDevelopingAddon.isDevelopingAddon" id="apidoc.element.smoke-and-mirrors.isDevelopingAddon.isDevelopingAddon">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>isDevelopingAddon
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDevelopingAddon = function () {
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors.treeForAddon" id="apidoc.module.smoke-and-mirrors.treeForAddon">module smoke-and-mirrors.treeForAddon</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.treeForAddon.treeForAddon" id="apidoc.element.smoke-and-mirrors.treeForAddon.treeForAddon">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForAddon
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForAddon = function () {
+  var tree = this._super.treeForAddon.apply(this, arguments);
+
+  if (/production/.test(this.parent.env)) {
+    tree = new Funnel(tree, { exclude: [ /-debug/ ] });
+  }
+
+  return tree;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.smoke-and-mirrors.treeForApp" id="apidoc.module.smoke-and-mirrors.treeForApp">module smoke-and-mirrors.treeForApp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.smoke-and-mirrors.treeForApp.treeForApp" id="apidoc.element.smoke-and-mirrors.treeForApp.treeForApp">
+        function <span class="apidocSignatureSpan">smoke-and-mirrors.</span>treeForApp
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">treeForApp = function () {
+  var tree = this._super.treeForApp.apply(this, arguments);
+
+  if (/production/.test(this.parent.env)) {
+    tree = new Funnel(tree, { exclude: [ /initializers/ ] });
+  }
+
+  return tree;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
