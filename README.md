@@ -1,4 +1,7 @@
-# api documentation for  [smoke-and-mirrors (v0.6.2)](https://runspired.github.io/smoke-and-mirrors)  [![npm package](https://img.shields.io/npm/v/npmdoc-smoke-and-mirrors.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-smoke-and-mirrors) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-smoke-and-mirrors.svg)](https://travis-ci.org/npmdoc/node-npmdoc-smoke-and-mirrors)
+# npmdoc-smoke-and-mirrors
+
+#### basic api documentation for  [smoke-and-mirrors (v0.6.2)](https://runspired.github.io/smoke-and-mirrors)  [![npm package](https://img.shields.io/npm/v/npmdoc-smoke-and-mirrors.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-smoke-and-mirrors) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-smoke-and-mirrors.svg)](https://travis-ci.org/npmdoc/node-npmdoc-smoke-and-mirrors)
+
 #### Ambitious infinite-scroll and rendering for ambitious applications.
 
 [![NPM](https://nodei.co/npm/smoke-and-mirrors.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/smoke-and-mirrors)
@@ -106,7 +109,8 @@
         "suave": "jscs addon app tests --fix",
         "test": "ember try:each"
     },
-    "version": "0.6.2"
+    "version": "0.6.2",
+    "bin": {}
 }
 ```
 
